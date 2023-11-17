@@ -1,4 +1,4 @@
-# Collaborators
+# Contributors
 
-## Abbey Kwame Morgan
+## Abbey Morgan Kwame
 ## Josphine Wamiti
