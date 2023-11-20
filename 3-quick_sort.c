@@ -9,7 +9,7 @@
  */
 void partition(int *array, int low_index, int high_index, int size)
 {
-	int pivot, i, j, temp, temp2;
+	int pivot, i, j, temp;
 
 	pivot = high_index;
 	i = low_index;
@@ -31,9 +31,9 @@ void partition(int *array, int low_index, int high_index, int size)
 		}
 		if (i != high_index)
 		{
-			temp2 = array[i];
+			temp = array[i];
 			array[i] = array[pivot];
-			array[pivot] = temp2;
+			array[pivot] = temp;
 			print_array(array, size);
 		}
 	partition(array, low_index, (i - 1), size);
