@@ -11,15 +11,15 @@ void partition(int *array, int low_index, int high_index, int size)
 {
 	int pivot, i, j, temp, temp2;
 
-	pivot = array[high_index];
+	pivot = high_index;
 	i = low_index;
 	if (low_index < high_index)
 	{
 		for (j = low_index; j < high_index; j++)
 		{
-			if (array[j] < pivot)
+			if (array[j] < array[pivot])
 			{
-				if (j != low_index)
+				if (j != i)
 				{
 					temp = array[j];
 					array[j] = array[i];
@@ -32,8 +32,8 @@ void partition(int *array, int low_index, int high_index, int size)
 		if (i != high_index)
 		{
 			temp2 = array[i];
-			array[i] = array[high_index];
-			array[high_index] = temp2;
+			array[i] = array[pivot];
+			array[pivot] = temp2;
 			print_array(array, size);
 		}
 	partition(array, low_index, (i - 1), size);
@@ -47,5 +47,9 @@ void partition(int *array, int low_index, int high_index, int size)
  */
 void quick_sort(int *array, size_t size)
 {
+	if (array == NULL || size < 2)
+	{
+		return;
+	}
 	partition(array, 0, (size - 1), size);
 }
