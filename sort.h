@@ -29,5 +29,8 @@ void partition(int *array, int low_index, int high_index, int size);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void quick_sort_hoare(int *array, size_t size);
+int hoare_partition(int *array, int low_index, int high_index, int size);
+void hoare_recursion(int *array, int low_index, int high_index, int size);
 
 #endif
