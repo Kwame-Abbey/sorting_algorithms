@@ -27,7 +27,7 @@ int num_fun(deck_node_t *head_t1)
 void num_sort(deck_node_t **list)
 {
 	deck_node_t *head_t1, *head_t2, *a1, *a2;
-	int flag = 0, i, anum1, anum2;
+	int flag = 0, i, a_num1, a_num2;
 	unsigned int k;
 
 	head_t1 = *list;
@@ -36,8 +36,8 @@ void num_sort(deck_node_t **list)
 	{ k =  head_t1->card->kind;
 		while (head_t1->next && head_t1->next->card->kind == k)
 		{
-			a_num1 = a_num_fun(head_t1);
-			a_num2 = a_num_fun(head_t1->next);
+			a_num1 = num_fun(head_t1);
+			a_num2 = num_fun(head_t1->next);
 			flag = 0;
 			head_t2 = head_t1;
 			while (head_t2 && head_t2->card->kind == k && a_num1 > a_num2)
