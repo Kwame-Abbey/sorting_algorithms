@@ -35,5 +35,10 @@ void hoare_recursion(int *array, int low_index, int high_index, int size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 int max_value(int *array, size_t size);
+void bitonic_sort(int *array, size_t size);
+void bit_compare(char up, int *array, size_t size);
+void bit_merge(char up, int *array, size_t size);
+void bit_sort(char up, int *array, size_t size, size_t t);
+
 
 #endif
