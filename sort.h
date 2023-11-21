@@ -39,6 +39,8 @@ void bitonic_sort(int *array, size_t size);
 void bit_compare(char up, int *array, size_t size);
 void bit_merge(char up, int *array, size_t size);
 void bit_sort(char up, int *array, size_t size, size_t t);
-
+void merge(int *array, int *temp, int left, int mid, int right);
+void merge_sort_recursive(int *array, int *temp, int left, int right);
+void merge_sort(int *array, size_t size);
 
 #endif
