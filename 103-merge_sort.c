@@ -86,7 +86,7 @@ void merge(int *array, int *temp, int left, int mid, int right)
 	/*print_done(array, left, right);*/
 }
 /**
- * print_left_right - focuses on printing
+ * print_left - focuses on printing
  * @array: the array to retrive the print
  * @left: left most index
  * @mid: middle index
